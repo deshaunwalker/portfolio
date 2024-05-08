@@ -60,26 +60,7 @@
   }
 
   
-    /* Profile container to hold the image and bio, aligned to the left */
-    .profile-container {
-      position: absolute;
-      left: 0; /* Align to the left edge of the viewport */
-      top: 50%; /* Center vertically */
-      transform: translateY(-50%);
-      animation-name: fadeIn;
-    animation-duration: 1s; /* Adjust the time as needed */
-    animation-fill-mode: both;
-    }
-
-    .profile-picture {
-      max-width: 100%; /* Use max-width to constrain the image width */
-      height: auto; /* Keep the aspect ratio */
-      border-radius: 5px;
-      animation-name: fadeIn;
-    animation-duration: 1s; /* Adjust the time as needed */
-    animation-fill-mode: both;
-    }
-
+   
     /* Style for the biography section */
     
     /* Container for the right-aligned text */
@@ -87,15 +68,15 @@
 /* Container for the right-aligned text */
 .text-container {
   position: absolute;
-  top: 40%; /* Vertically center the container */
-  right: 10%; /* Adjust the percentage to move the text to the right place */
-  transform: translateY(-50%); /* Center the container */
-  text-align: center; /* Align text to the right */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to truly center */
+  text-align: center; /* Align text to the center */
   color: #FFFFFF; /* Assuming the text is white */
   width: 30%; /* Adjust the width as necessary */
   animation-name: fadeIn;
-    animation-duration: 1s; /* Adjust the time as needed */
-    animation-fill-mode: both;
+  animation-duration: 1s; /* Adjust the time as needed */
+  animation-fill-mode: both;
 }
 
 /* Style for the title */
@@ -138,15 +119,11 @@
   </a></h1>
   <nav class="navigation-bar">
     <a href="about.html">About</a>
-    <a href="index.html">Portfolio</a>
+    <a href="port.html">Portfolio</a>
     <a href="contact.html">Contact</a>
   </nav>
   
-  <div class="profile-container">
-    <img src="actafoolcat.png" alt="Deshaun Walker" class="profile-picture">
-    
-    </div>
-  </div>
+  
 
   <div class="text-container">
     <div class="art-title">Deshaun Walker</div>
