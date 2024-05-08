@@ -5,17 +5,19 @@ html, body {
 
 body {
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('video.mp4'); /* Replace with your actual sky background image */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Fix the background */
 }
 
 .navigation-bar {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 2;
     padding: 10px;
 }
 
@@ -23,51 +25,110 @@ body {
     margin: 0 10px;
     text-decoration: none;
     color: white;
+    cursor: pointer;
+}
+
+.navigation-bar a:hover {
+    text-decoration: underline;
 }
 
 h1 {
-    position: fixed; /* Keep the header fixed as well */
+    position: absolute;
     top: 0;
     left: 0;
     margin: 0;
-    padding: 10px; /* Adjust padding to position your title */
+    padding: 0;
     color: white;
-    z-index: 100; /* Ensure it's above other elements */
 }
 
-.portfolio {
-    position: fixed;
-    top: 60px; /* Start below your fixed header/navigation */
-    bottom: 0;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.profile-container {
+    position: absolute;
     left: 0;
-    right: 0;
-    overflow-y: auto; /* Enable scrolling for this element */
-    margin: 0 auto;
-    width: 80%;
-    z-index: 50; /* Below fixed elements, above the background */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s both;
 }
 
-.year {
-    font-size: 36px;
-    margin: 20px 0;
+.profile-picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.text-container {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    transform: translateY(-50%);
     text-align: center;
     color: white;
+    width: 30%;
+    animation: fadeIn 1s both;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
+.art-title {
+    font-size: 4em;
+    margin-bottom: 0.3em;
+    font-weight: dark;
+    animation: fadeIn 1s both;
 }
 
-.gallery img {
-    width: calc(33.333% - 10px);
-    height: auto;
+.art-details p, .art-description p {
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+    animation: fadeIn 1s both;
 }
 
-@media (max-width: 600px) {
-    .gallery img {
-        width: calc(50% - 10px);
-    }
+.art-description p {
+    font-size: 1.5em;
+    margin-top: 2em;
+    animation: fadeIn 1s both;
+}
+.contact-header {
+  position: relative;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: white;
+  animation: fadeIn 1s both;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  animation: fadeIn 1s both;
+}
+
+.contact-form input[type='text'], .contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  animation: fadeIn 1s both;
+}
+
+.contact-form input[type='submit'] {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  background-color: lightslategray;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  animation: fadeIn 1s both;
+  min-width: 60px;
+}
+
+.contact-form input[type='submit']:hover {
+  background-color: #45a049;
+  animation: fadeIn 1s both;
 }
