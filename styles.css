@@ -150,3 +150,64 @@ h1 {
         width: calc(50% - 10px);
     }
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.contact-header {
+  position: relative; /* or absolute, depending on your specific layout */
+  top: -50px; /* Adjust this value to set the exact position you want */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontal centering */
+  z-index: 10; /* Ensure it's above other elements */
+  color: white;
+  animation-name: fadeIn;
+    animation-duration: 1s; /* Adjust the time as needed */
+    animation-fill-mode: both;
+}
+.contact-form h2 {
+  text-align: center;
+  margin-top: 0.5em; /* Adjust this value to set the header higher as needed */
+  margin-bottom: 1em;
+  animation-name: fadeIn;
+    animation-duration: 1s; /* Adjust the time as needed */
+    animation-fill-mode: both;
+}
+
+    .contact-form input[type='text'],
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      animation-name: fadeIn;
+    animation-duration: 1s; /* Adjust the time as needed */
+    animation-fill-mode: both;
+    }
+
+    .contact-form input[type='submit'] {
+      width: 100%;
+      padding: 1em;
+      border: none;
+      background-color: lightslategray;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+      animation-name: fadeIn;
+    animation-duration: 1s; /* Adjust the time as needed */
+    animation-fill-mode: both;
+    min-width: 60px;
+    }
+
+    .contact-form input[type='submit']:hover {
+      background-color: #45a049;
+      animation-name: fadeIn;
+    animation-duration: 1s; /* Adjust the time as needed */
+    animation-fill-mode: both;
+    }
+  
