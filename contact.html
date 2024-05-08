@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deshaun Walker</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1><a href="index.html">
+    <img src="imagehome.png" alt="My Website" style="height: 300px; width: auto;"/>
+  </a></h1>
+  <nav class="navigation-bar">
+    <a href="about.html">About</a>
+    <a href="port.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="contact-form">
+    <div class="contact-header">
+      <h2>Contact</h2>
+    </div>
+    
+    <!-- Updated form tag with id for AJAX -->
+    <form id="contactForm" action="https://formspree.io/f/xeqyvblg" method="POST">
+      <input type="text" id="name" name="name" placeholder="Name">
+      <input type="text" id="email" name="email" placeholder="Email address">
+      <textarea id="message" name="message" placeholder="Message" style="height:150px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    <div id="formFeedback"></div> <!-- Element to display the feedback message -->
+  </div>
+
+  <!-- Include your JavaScript at the bottom of the body for better load times -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="form-script.js"></script> <!-- Assuming you moved the script to an external file -->
+
+</body>
+</html>
