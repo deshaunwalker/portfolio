@@ -44,6 +44,9 @@ font-family: sans-serif;
     text-decoration: none;
     color: white;
 }
+ .navigation-bar a:hover {
+      text-decoration: underline;
+    }
 
 h1 {
     position: fixed; /* Keep the header fixed as well */
