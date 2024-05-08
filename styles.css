@@ -19,12 +19,16 @@ body {
     margin: 0;
 }
 
-body {
-    font-family: sans-serif;
-    background-image: url('video.mp4'); /* Replace with your actual sky background image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Fix the background */
+font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('video.mp4'); /* Replace with your actual sky background image */
+      background-size: cover;
+      background-position: center;
+      animation-name: fadeIn;
+    animation-duration: 1s; /* Adjust the time as needed */
+    animation-fill-mode: both;
 }
 
 .navigation-bar {
