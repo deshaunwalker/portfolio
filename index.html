@@ -73,7 +73,10 @@
         margin: 0 auto;
         width: 80%;
         z-index: 50;
-      }
+    animation-name: fadeIn;
+  animation-duration: 1s; /* Adjust the time as needed */
+  animation-fill-mode: both;
+}
 
       .year {
         font-size: 36px;
@@ -87,12 +90,18 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 10px;
-      }
+      animation-name: fadeIn;
+  animation-duration: 1s; /* Adjust the time as needed */
+  animation-fill-mode: both;
+}
 
       .gallery img {
         width: calc(33.333% - 10px);
         height: auto;
-      }
+   animation-name: fadeIn;
+  animation-duration: 1s; /* Adjust the time as needed */
+  animation-fill-mode: both;
+}
 
       @media (max-width: 600px) {
         .gallery img {
