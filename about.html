@@ -12,7 +12,43 @@
       height: 100%;
       margin: 0;
     }
+     body {
+        font-family: sans-serif;
+        background-image: url('video.mp4'); /* Replace with your actual sky background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Fix the background */
+        }
+
+        .navigation-bar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 100;
+            padding: 10px;
+        }
+
+        .navigation-bar a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+      .navigation-bar a:hover {
+      text-decoration: underline;
     
+      }
+
+        h1 {
+            position: fixed; /* Keep the header fixed as well */
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 10px; /* Adjust padding to position your title */
+            color: white;
+            z-index: 100; /* Ensure it's above other elements */
+        }
+
     
     @keyframes fadeIn {
     from {
