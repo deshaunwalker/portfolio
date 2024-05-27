@@ -34,32 +34,34 @@
       }
 
     .navigation-bar {
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 2;
-      padding: 10px;
-    }
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        padding: 10px;
+      }
 
-    .navigation-bar a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: white;
-      transition: text-decoration 0.3s;
-      cursor: pointer;
-    }
-    .navigation-bar a:hover {
-      text-decoration: underline;
-    }
+      .navigation-bar a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
 
-    h1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0; /* No padding to ensure it is at the very corner */
-  color: white;
-}
+      .navigation-bar a:hover {
+        text-decoration: underline;
+      }
+
+      h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 10px;
+        color: white;
+        z-index: 100;
+      }
+    
 @keyframes fadeIn {
     from {
       opacity: 0;
